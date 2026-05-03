@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 1 – Web Development | Pal Gandhi</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav>
+  <a href="index.html" class="logo">FABLAB</a>
+  <a href="index.html#fablab" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Modules</a>
+</nav>
+
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1800&q=85" alt="Web Development">
+  <div class="hero-grad"></div>
+  <div class="hero-content">
+    <div class="mod-pill">Module — 01</div>
+    <h1 class="hero-title">Web Development</h1>
+    <p class="hero-sub" id="hero-sub">HTML · CSS · JavaScript · GitHub</p>
+  </div>
+</div>
+
+<div class="page">
+
+  <div class="intro-card rv">In this module I learned the core foundations of building websites — from structuring pages with HTML, styling with CSS, to adding interactivity with JavaScript. Each day of the FabLab session focused on a different concept, progressively building toward a complete To-Do List project deployed live on GitHub Pages.</div>
+
+  <div class="sec rv">
+    <div class="sec-head"><i class="fa-solid fa-calendar-days"></i> Day by Day</div>
+    <div class="sec-bar"></div>
+    <div class="day-grid">
+
+      <!-- Day 1 -->
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-1">
+          <img class="bg-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=600&q=80" alt="Day 1 - Basic HTML Tags">
+          <img class="uploaded" id="uimg-1" alt="">
+          <span class="day-label">Day 1</span>
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-1','uimg-1')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-1')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title"><a href="https://pal08.github.io/Pal/ass1.html">Basic HTML Tags</a></div>
+          <p class="day-desc">Introduction to the building blocks of every webpage — writing your very first HTML document.</p>
+          <ul class="day-points">
+            <li>Set up VS Code &amp; created first <code>.html</code> file</li>
+            <li>Used tags: <code>p, b, i, u, br, hr</code></li>
+            <li>Text effects with <code>marquee</code>, <code>sub</code>, <code>sup</code></li>
+            <li>Understood HTML document structure &amp; nesting</li>
+            <li>Practiced heading tags <code>h1–h6</code> &amp; paragraphs</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-2">
+          <img class="bg-img" src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80" alt="Day 2 - Image, Anchor, Media & Table">
+          <img class="uploaded" id="uimg-2" alt="">
+          <span class="day-label">Day 2</span>
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-2','uimg-2')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-2')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title"><a href="https://pal08.github.io/Pal/ass2.html">Image, Anchor, Media &amp; Table</a></div>
+          <p class="day-desc">Embedding rich content and linking pages — making HTML truly interactive and visual.</p>
+          <ul class="day-points">
+            <li>Inserted images with <code>&lt;img&gt;</code> &amp; attributes</li>
+            <li>Created hyperlinks using <code>&lt;a href&gt;</code></li>
+            <li>Embedded video &amp; audio with <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code></li>
+            <li>Built structured data tables — rows, cols, colspan</li>
+            <li>Added table headers, borders &amp; captions</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-3">
+          <img class="bg-img" src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=600&q=80" alt="Day 3 - HTML Forms">
+          <img class="uploaded" id="uimg-3" alt="">
+          <span class="day-label">Day 3</span>
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-3','uimg-3')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-3')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title"><a href="https://pal08.github.io/Pal/ass3.html">HTML Forms</a></div>
+          <p class="day-desc">Collecting user input — the gateway to dynamic and interactive web applications.</p>
+          <ul class="day-points">
+            <li>Built forms with <code>&lt;form&gt;</code>, <code>action</code>, <code>method</code></li>
+            <li>Input types: text, email, password, number, date</li>
+            <li>Used radio buttons, checkboxes &amp; dropdowns</li>
+            <li>Added <code>textarea</code>, <code>submit</code> &amp; <code>reset</code> buttons</li>
+            <li>Applied <code>label</code>, <code>placeholder</code> &amp; <code>required</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-4">
+          <img class="bg-img" src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Day 4 - Header, Nav, Footer & CSS Selectors">
+          <img class="uploaded" id="uimg-4" alt="">
+          <span class="day-label">Day 4</span>
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-4','uimg-4')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-4')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title"><a href="https://pal08.github.io/Pal/ass4.html">Header, Nav, Footer &amp; CSS Selectors</a></div>
+          <p class="day-desc">Structuring pages semantically and targeting elements with the full power of CSS.</p>
+          <ul class="day-points">
+            <li>Semantic tags: <code>header</code>, <code>nav</code>, <code>footer</code>, <code>main</code></li>
+            <li>CSS selectors: element, class <code>(.)</code>, ID <code>(#)</code></li>
+            <li>Pseudo-classes: <code>:hover</code>, <code>:first-child</code>, <code>:nth-child</code></li>
+            <li>Attribute selectors &amp; combinator selectors</li>
+            <li>Styled a full-page layout with nav &amp; footer</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-5">
+          <img class="bg-img" src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=80" alt="Day 5 - Box Model & Flexbox">
+          <img class="uploaded" id="uimg-5" alt="">
+          <span class="day-label">Day 5</span>
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-5','uimg-5')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-5')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title"><a href="https://pal08.github.io/Pal/ass5.html">Box Model &amp; Flexbox</a></div>
+          <p class="day-desc">Mastering layout — understanding spacing and building flexible, responsive arrangements.</p>
+          <ul class="day-points">
+            <li>Box Model: <code>margin</code>, <code>border</code>, <code>padding</code>, <code>content</code></li>
+            <li><code>box-sizing: border-box</code> explained</li>
+            <li>Flexbox: <code>display:flex</code>, <code>flex-direction</code></li>
+            <li><code>justify-content</code>, <code>align-items</code>, <code>gap</code></li>
+            <li>Built a responsive card layout using Flexbox</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-6">
+          <img class="bg-img" src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=600&q=80" alt="Day 6 - JavaScript Basics">
+          <img class="uploaded" id="uimg-6" alt="">
+          <span class="day-label">Day 6</span>
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-6','uimg-6')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-6')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title"><a href="https://pal08.github.io/Pal/ass6script.js">JavaScript Basics &amp; All Operations</a></div>
+          <p class="day-desc">Bringing pages to life — writing logic, manipulating the DOM, and handling all core JS operations.</p>
+          <ul class="day-points">
+            <li>Variables: <code>var</code>, <code>let</code>, <code>const</code> &amp; data types</li>
+            <li>Arithmetic, comparison &amp; logical operators</li>
+            <li>Conditionals: <code>if/else</code>, <code>switch</code></li>
+            <li>Loops: <code>for</code>, <code>while</code>, <code>do-while</code></li>
+            <li>Functions, DOM selection &amp; event listeners</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 7 — Wide Featured Card -->
+      <div class="day-card day-card-wide">
+        <div class="day-inner">
+          <div class="day-img-wrap" id="wrap-7">
+            <img class="bg-img" src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=900&q=85" alt="Day 7 - To-Do List Project">
+            <img class="uploaded" id="uimg-7" alt="">
+            <span class="day-label">Day 7</span>
+            <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-7','uimg-7')">
+            <button class="change-btn" onclick="triggerFile(event,'wrap-7')">&#9998; Change</button>
+          </div>
+          <div class="day-body">
+            <div class="featured-badge"><i class="fa-solid fa-trophy"></i> Final Project</div>
+            <div class="day-title"><a href="https://pal08.github.io/Pal/ass7.html">To-Do List Project</a></div>
+            <p class="day-desc">The culmination of everything — combining HTML, CSS, and JavaScript into one complete, deployed web application.</p>
+            <ul class="day-points">
+              <li>Built a full To-Do List app from scratch</li>
+              <li>Add, delete &amp; mark tasks as complete</li>
+              <li>Used <code>localStorage</code> to persist tasks on refresh</li>
+              <li>Applied HTML + CSS + JS together end-to-end</li>
+              <li>Pushed code to GitHub repository</li>
+              <li>Deployed live on GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sec rv">
+    <div class="sec-head"><i class="fa-solid fa-laptop-code"></i> Projects Built</div>
+    <div class="sec-bar"></div>
+
+    <div class="project-row">
+      <img class="project-row-img" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Developer Portfolio Website">
+      <div class="project-row-body">
+        <span class="project-tag">Main Project</span>
+        <div class="project-row-title">Developer Portfolio Website</div>
+        <p class="project-row-desc">A Netflix-inspired personal portfolio showcasing all FabLab modules. Features animated hero, typewriter effect, scroll animations, and a fully responsive layout across all screen sizes.</p>
+        <div class="ptags">
+          <span class="ptag">HTML</span>
+          <span class="ptag">CSS</span>
+          <span class="ptag">JavaScript</span>
+          <span class="ptag">GitHub Pages</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-row">
+      <img class="project-row-img" src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=600&q=80" alt="To-Do List App">
+      <div class="project-row-body">
+        <span class="project-tag">Mini Project</span>
+        <div class="project-row-title">To-Do List App</div>
+        <p class="project-row-desc">A fully functional task manager built with vanilla HTML, CSS, and JavaScript. Supports adding, deleting, and completing tasks — with localStorage so nothing is lost on refresh. Deployed live on GitHub Pages.</p>
+        <div class="ptags">
+          <span class="ptag">HTML</span>
+          <span class="ptag">CSS</span>
+          <span class="ptag">JavaScript</span>
+          <span class="ptag">localStorage</span>
+        </div>
+        <a class="project-link" href="https://pal08.github.io/Pal/ass7.html" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sec rv">
+    <div class="sec-head"><i class="fa-solid fa-wrench"></i> Technologies Used</div>
+    <div class="sec-bar"></div>
+    <div class="badge-wrap">
+      <div class="badge"><i class="fa-brands fa-html5"></i> HTML</div>
+      <div class="badge"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+      <div class="badge"><i class="fa-brands fa-js"></i> JavaScript</div>
+      <div class="badge"><i class="fa-brands fa-github"></i> GitHub</div>
+      <div class="badge"><i class="fa-solid fa-code"></i> VS Code</div>
+      <div class="badge"><i class="fa-solid fa-table-columns"></i> Flexbox</div>
+      <div class="badge"><i class="fa-solid fa-box"></i> Box Model</div>
+      <div class="badge"><i class="fa-solid fa-database"></i> localStorage</div>
+    </div>
+  </div>
+
+  <div class="sec rv">
+    <div class="sec-head"><i class="fa-solid fa-pen-to-square"></i> My Reflection</div>
+    <div class="sec-bar"></div>
+    <div class="reflection-box">
+      <p>This was my <strong>first real deep dive into web development</strong>. I had seen HTML before but never built anything complete from scratch. Working through this module day by day taught me how all three core technologies — HTML, CSS, and JavaScript — fit together to create a real working website.<br><br>The biggest challenge was <strong>understanding the Box Model and Flexbox</strong>. Getting elements to space and align properly took a lot of trial and error, but once it clicked it felt like a superpower — I could finally control the layout of any page with confidence.<br><br>Learning <strong>JavaScript on Day 6 was a turning point</strong>. Understanding variables, loops, functions, and DOM manipulation made me realize how much is possible with just vanilla JS — no libraries needed.</p>
+    </div>
+  </div>
+
+  <div class="rv">
+    <a href="index.html#fablab" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back to All Modules</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="fl">Pal Gandhi</div>
+  <div class="fc">© 2026 Pal Gandhi &nbsp;·&nbsp; Module 1 – Web Development</div>
+</footer>
+
+<script src="script1.js"></script>
+</body>
+</html>

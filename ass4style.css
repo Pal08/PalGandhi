@@ -1,0 +1,124 @@
+h1 {
+        color:white;
+        font-size:18px;
+        text-align: center;
+        background-color: darkgreen;
+        text-decoration:underline;
+        text-transform: capitalize;
+        text-overflow: ellipsis;
+        text-shadow: #1e0202;
+    }
+    b  {
+        color:black;
+        text-align:center;
+        font-size:20px;
+    }
+    i[class="author"]{
+        font-size: 14px;
+        text-align: center;
+        color:black;
+    }
+    .highlight  {
+        background-color:rgb(162, 193, 183);
+        text-align:center;
+
+    }
+    marquee{
+        color:black;
+        text-align: center;
+        text-decoration:underline;
+    }
+    *{
+        margin:0;
+        padding:0;
+    }
+    ul {
+        border:1px solid black;
+        padding:5px;
+        background-color: bisque;
+    }
+    a:hover{
+        text-align: center;
+        color:palevioletred;
+    }
+    p::first-letter{
+        font-size:35px;
+        color:black;
+    }
+    
+    nav ul {
+        list-style: none;        
+        padding: 0;
+    }
+    nav ol{
+        list-style: none;        
+        padding: 0;
+        color:rgb(51, 49, 49);
+    }
+    }
+
+    header {
+        background:darkgreen;
+        padding: 25px;
+        text-align: center;
+    }
+    
+    body {
+        font-family: 'Segoe UI';
+        background: rgb(99, 126, 99);
+        line-height:3:6;
+        color: #333;
+    }
+    
+    .container {
+        margin-left: 50%;
+        max-width: 900px;
+        margin: 20px;
+        padding: 30px;
+        background:white;
+        border-radius: 15px;
+        box-shadow:black;
+    }
+    
+    footer {
+        background: darkgreen;
+        color:white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-weight: 500;
+    }
+    
+    input[type="text"] {
+        padding: 12px 15px;
+        border: 2px solid black;
+        border-radius: 25px;
+        width: 280px;
+        font-size: 15px;
+        background: white;
+        transition: all 0.3s ease;
+    }
+    
+    input[type="text"]:focus {
+        border-color:orange;
+        box-shadow: brown;    }
+    
+    nav a {
+        color: lightgreen;
+        text-decoration: none;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        padding: 8px ;
+        border-radius: 20px;
+        background: black;
+    }
+    
+    nav a:hover {
+        background:grey;
+        color: white;
+    }
+   p [class="commentary"]{
+    text-decoration: dotted;
+   }    

@@ -1,0 +1,45 @@
+.box1{
+    width:600px;
+    height:600px;
+    padding:5%;
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-left:25%;
+    background-color:#FFF4CC;   
+}
+
+.box2{
+    width:500px;
+    height:500px;
+    padding:2%;
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    background-color:#DFF6DD;   
+}
+
+.circle{
+    width:275px;
+    height:205px;
+    border-radius:100%;
+    border:2px solid black;
+    background-color:#FFB347; 
+    display:flex;
+    background-image: 100%;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    font-weight:bold;
+    font-family:Arial;
+}
+
+.circle img{
+    width:80px;
+    height:80px;
+}

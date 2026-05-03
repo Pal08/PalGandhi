@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+
+<body>
+
+<h2>REGISTRATION FORM</h2>
+
+<form action="#" method="post">
+
+<fieldset>
+<legend>Personal Details</legend>
+
+<label>Full Name:</label>
+<input type="text" name="fullname" placeholder="Enter your fullname">
+<br><br>
+
+<label>Password:</label>
+<input type="password" name="password" minlength="6" placeholder="password" required>
+<br><br>
+
+<label>Email:</label>
+<input type="email" name="email" placeholder="abc@gmail.com" required>
+<br><br>
+
+<label>Number:</label>
+<input type="tel" name="number" pattern="[0-9]{10}" placeholder="Enter 10 digit number">
+<br><br>
+
+<label>Date of Birth:</label>
+<input type="date" name="DOB">
+<br><br>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Other Information</legend>
+
+<label>Website:</label>
+<input type="url" name="website" placeholder="https://www.ssgmce.ac.in/">
+<br><br>
+
+<label>Favorite Color:</label>
+<input type="color" name="color">
+<br><br>
+
+<label>Satisfaction Level:</label>
+<input type="range" name="range" min="0" max="10">
+<br><br>
+
+Gender:
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="other">Other
+<br><br>
+
+Domain:
+<input type="checkbox" name="domain" value="Web Development">Web Development
+<input type="checkbox" name="domain" value="UI/UX">UI/UX
+<input type="checkbox" name="domain" value="JAVA">JAVA
+<br><br>
+
+City:
+<select name="city">
+<option value="">Select city</option>
+<option value="Shegaon">Shegaon</option>
+<option value="Akola">Akola</option>
+<option value="Nagpur">Nagpur</option>
+</select>
+<br><br>
+
+Hobbies:
+<select name="hobbies" multiple size="3">
+<option value="Poetry">Poetry</option>
+<option value="Doodles">Doodles</option>
+<option value="Dancing">Dancing</option>
+</select>
+<br><br>
+
+Documents:
+<input type="file" name="profile">
+<br><br>
+
+<label>Address:</label><br>
+<textarea rows="4" cols="40" placeholder="Enter your address"></textarea>
+<br><br>
+
+</fieldset>
+
+<br>
+
+<button type="submit">Register</button>
+<button type="reset">Clear</button>
+
+</form>
+
+</body>
+</html>

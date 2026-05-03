@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 3 – Computer Aided Design | Pal Gandhi</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav>
+  <a href="index.html" class="logo">FABLAB</a>
+  <a href="index.html#fablab" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Modules</a>
+</nav>
+
+<div class="hero">
+  <img class="hero-bg" src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1800&q=85" alt="CAD">
+  <div class="hero-grad"></div>
+  <div class="hero-content">
+    <div class="mod-pill">Module — 03</div>
+    <h1 class="hero-title">Computer Aided Design</h1>
+    <p class="hero-sub" id="hero-sub">Fusion 360 · Parametric Modelling · 3D Sketching · Assembly &amp; Motion</p>
+  </div>
+</div>
+
+<div class="page">
+
+  <div class="intro-card rv">
+    In this module I learned how professionals use <strong style="color:#fff;">Computer Aided Design (CAD)</strong> software to create precise parametric 3D models and engineering components. Using <strong style="color:#fff;">Fusion 360</strong>, I explored 2D sketching with constraints, solid 3D modelling, assemblies with joints, and completed a final design project — covering the full CAD workflow from concept sketch to finished model.
+  </div>
+
+  <div class="sec rv">
+    <div class="sec-head"><i class="fa-solid fa-calendar-days"></i> 7-Day Fusion 360 Learning Plan</div>
+    <div class="sec-bar"></div>
+    <div class="day-grid">
+
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-1">
+          <span class="day-label">Day 1</span>
+          <img class="bg-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=75" alt="Day 1">
+          <img class="uploaded" id="uimg-1" alt="">
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-1','uimg-1')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-1')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title">Introduction &amp; Interface</div>
+          <ul class="day-points">
+            <li>What is Fusion 360 — CAD, CAM, CAE basics</li>
+            <li>Workspace overview: Design, Solid, Surface</li>
+            <li>Navigation — zoom, pan, orbit</li>
+            <li>Create your first sketch</li>
+          </ul>
+          <span class="practice-tag">👉 Practice: Rectangle, circle, line</span>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-2">
+          <span class="day-label">Day 2</span>
+          <img class="bg-img" src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=600&q=75" alt="Day 2">
+          <img class="uploaded" id="uimg-2" alt="">
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-2','uimg-2')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-2')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title">Sketching — 2D Basics</div>
+          <ul class="day-points">
+            <li>Sketch tools: Line, Circle, Arc, Rectangle</li>
+            <li>Constraints: Coincident, Parallel, Perpendicular</li>
+            <li>Dimensions — fully constrained sketches</li>
+          </ul>
+          <span class="practice-tag">👉 Practice: Fully constrained sketch</span>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-3">
+          <span class="day-label">Day 3</span>
+          <img class="bg-img" src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=600&q=75" alt="Day 3">
+          <img class="uploaded" id="uimg-3" alt="">
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-3','uimg-3')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-3')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title">Advanced Sketch Practice</div>
+          <ul class="day-points">
+            <li>Offset, Trim, Extend tools</li>
+            <li>Mirror &amp; Pattern operations</li>
+            <li>Complex multi-geometry sketches</li>
+          </ul>
+          <span class="practice-tag">👉 Practice: Gear outline &amp; bracket shape</span>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-4">
+          <span class="day-label">Day 4</span>
+          <img class="bg-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=75" alt="Day 4">
+          <img class="uploaded" id="uimg-4" alt="">
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-4','uimg-4')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-4')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title">3D Modelling — Core Day 🚀</div>
+          <ul class="day-points">
+            <li>Sketch → 3D using Extrude &amp; Revolve</li>
+            <li>Modify tools: Fillet &amp; Chamfer</li>
+            <li>Understanding solid bodies</li>
+          </ul>
+          <span class="practice-tag">👉 Practice: Cylinder &amp; bolt-like shape</span>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-5">
+          <span class="day-label">Day 5</span>
+          <img class="bg-img" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=75" alt="Day 5">
+          <img class="uploaded" id="uimg-5" alt="">
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-5','uimg-5')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-5')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title">Assembly &amp; Motion</div>
+          <ul class="day-points">
+            <li>Components vs Bodies concept</li>
+            <li>Joint tool — degrees of freedom</li>
+            <li>Motion study setup</li>
+          </ul>
+          <span class="practice-tag">👉 Practice: Simple hinge mechanism</span>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-img-wrap" id="wrap-6">
+          <span class="day-label">Day 6</span>
+          <img class="bg-img" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=75" alt="Day 6">
+          <img class="uploaded" id="uimg-6" alt="">
+          <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-6','uimg-6')">
+          <button class="change-btn" onclick="triggerFile(event,'wrap-6')">&#9998; Change</button>
+        </div>
+        <div class="day-body">
+          <div class="day-title">Engineering Practice</div>
+          <ul class="day-points">
+            <li>Real parts: Spur gear &amp; plate with holes</li>
+            <li>Measure tool &amp; Inspect workflow</li>
+            <li>Prepare models for laser cutting</li>
+          </ul>
+          <span class="practice-tag">👉 Practice: Design a laser-cut plate</span>
+        </div>
+      </div>
+
+      <div class="day-card day-card-wide">
+        <div class="day-inner">
+          <div class="day-img-wrap" id="wrap-7">
+            <span class="day-label">Day 7</span>
+            <img class="bg-img" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=900&q=75" alt="Day 7">
+            <img class="uploaded" id="uimg-7" alt="">
+            <input type="file" accept="image/*" onchange="handleUpload(this,'wrap-7','uimg-7')">
+            <button class="change-btn" onclick="triggerFile(event,'wrap-7')">&#9998; Change</button>
+          </div>
+          <div class="day-body">
+            <div class="day-title">Final Project 🎯 — Combine Everything</div>
+            <ul class="day-points">
+              <li>Phone stand design</li>
+              <li>Power button assembly</li>
+              <li>Simple clamp model</li>
+              <li>Key holder for laser cutting</li>
+              <li>Full sketch → 3D → assembly pipeline</li>
+              <li>Export-ready final model</li>
+            </ul>
+            <span class="practice-tag">👉 Build your chosen final project from scratch</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sec rv">
+    <div class="sec-head"><i class="fa-solid fa-laptop-code"></i> Projects Built</div>
+    <div class="sec-bar"></div>
+    <div class="project-row">
+      <img class="project-row-img" src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=75" alt="Final Project">
+      <div class="project-row-body">
+        <span class="project-tag">Main Project</span>
+        <div class="project-row-title">Fusion 360 Final 3D Model</div>
+        <p class="project-row-desc">A fully parametric 3D model designed from scratch in Fusion 360. Applied sketch constraints, extrude/revolve operations, fillet/chamfer finishing, and assembled multiple components with joints to simulate real motion.</p>
+        <div class="ptags">
+          <span class="ptag">Fusion 360</span><span class="ptag">Parametric CAD</span><span class="ptag">3D Modelling</span><span class="ptag">Assembly</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-row">
+      <img class="project-row-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=75" alt="Laser Cut Plate">
+      <div class="project-row-body">
+        <span class="project-tag">Mini Project</span>
+        <div class="project-row-title">Laser-Cut Plate Design</div>
+        <p class="project-row-desc">A precise 2D engineering sketch of a plate with holes and cutouts designed for laser cutting. Used Fusion 360's sketch tools, dimension constraints, and Inspect/Measure tools to verify accuracy before export.</p>
+        <div class="ptags">
+          <span class="ptag">Fusion 360</span><span class="ptag">2D Sketching</span><span class="ptag">Laser Cutting Prep</span><span class="ptag">DXF Export</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec rv">
+    <div class="sec-head"><i class="fa-solid fa-wrench"></i> Technologies Used</div>
+    <div class="sec-bar"></div>
+    <div class="badge-wrap">
+      <div class="badge"><i class="fa-solid fa-cube"></i> Fusion 360</div>
+      <div class="badge"><i class="fa-solid fa-pen-ruler"></i> Parametric Sketching</div>
+      <div class="badge"><i class="fa-solid fa-layer-group"></i> Solid Modelling</div>
+      <div class="badge"><i class="fa-solid fa-gears"></i> Assembly &amp; Joints</div>
+      <div class="badge"><i class="fa-solid fa-compass-drafting"></i> Constraints &amp; Dimensions</div>
+      <div class="badge"><i class="fa-solid fa-rotate"></i> Extrude &amp; Revolve</div>
+      <div class="badge"><i class="fa-solid fa-vector-square"></i> Fillet &amp; Chamfer</div>
+      <div class="badge"><i class="fa-solid fa-file-export"></i> DXF / STL Export</div>
+    </div>
+  </div>
+
+  <div class="sec rv">
+    <div class="sec-head"><i class="fa-solid fa-pen-to-square"></i> My Reflection</div>
+    <div class="sec-bar"></div>
+    <div class="reflection-box">
+      <p>CAD is an entirely different discipline compared to web development or UI design. <strong>Precision is non-negotiable</strong> — every sketch line has a geometric relationship, every dimension drives the shape, and one unconstrained point can break an entire model.<br><br>Learning Fusion 360's constraint system was the biggest shift in my thinking. Once I understood how <strong>fully constrained sketches</strong> work — where the geometry is locked and predictable — modelling became fast and reliable. The progression from a 2D sketch to a full 3D solid using Extrude and Revolve was genuinely satisfying.<br><br>The assembly and joint session on Day 5 opened up a new dimension — watching a <strong>hinge mechanism move in simulation</strong> exactly as designed showed me the real power of parametric CAD. The final project tied everything together and gave me a workflow I can apply to real engineering problems.</p>
+    </div>
+  </div>
+
+  <div class="rv">
+    <a href="index.html#fablab" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back to All Modules</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="fl">Pal Gandhi</div>
+  <div class="fc">© 2026 Pal Gandhi &nbsp;·&nbsp; Module 3 – Computer Aided Design</div>
+</footer>
+
+<script src="script3.js"></script>
+</body>
+</html>

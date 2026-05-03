@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pal Gandhi | Digital Fablab</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- LOADER -->
+<div id="loader">
+  <div id="loader-name">Pal Gandhi</div>
+  <div id="loader-bar-track"><div id="loader-bar-fill"></div></div>
+  <div id="loader-percent">0%</div>
+</div>
+ 
+<!-- CUSTOM CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+ 
+<!-- PARTICLES CANVAS -->
+<canvas id="particles"></canvas>
+ 
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <span class="nav-logo-text">FABLAB</span>
+  </a>
+  <ul class="nav-menu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#fablab">FabLab</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="agreement.txt" target="_blank">Agreement</a></li>
+  </ul>
+  <a href="#contact" class="nav-contact-btn">Contact Me</a>
+</nav>
+ 
+<!-- HERO SECTION -->
+<section id="hero">
+  <div id="hero-bg"></div>
+  <div id="hero-overlay"></div>
+  <div id="hero-text">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Digital Fablab Portfolio
+    </div>
+    <h1 class="hero-name">Pal Gandhi</h1>
+    <div class="hero-role"><span id="typewriter"></span></div>
+    <p class="hero-desc">I'm a passionate web developer who builds modern, high-quality web applications. I combine clean code, thoughtful design, and emerging technology to create meaningful digital experiences.</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-red"><i class="fa-solid fa-play"></i> View Projects</a>
+      <a href="#about" class="btn btn-outline"><i class="fa-solid fa-user"></i> About Me</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-box">
+      <div class="stat-number"><span data-count="9">0</span><span>+</span></div>
+      <div class="stat-label">Modules</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-number"><span data-count="1">0</span></div>
+      <div class="stat-label">Projects</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ABOUT SECTION -->
+<section id="about" class="section fade-section">
+  <div class="about-grid">
+    <div class="about-photo-wrap hide-left">
+      <img class="about-photo" src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=800&q=85" alt="Developer workspace">
+      <div class="about-badge">
+        <span class="big-num">9</span>
+        <span class="small-txt">FabLab<br>Modules</span>
+      </div>
+    </div>
+    <div class="hide-right">
+      <div class="tag-label">Who Am I</div>
+      <h2 class="section-heading">A Web Developer</h2>
+      <div class="red-line"></div>
+      <p class="about-bio">Hi, I'm Pal Gandhi — a passionate web developer who enjoys crafting experiences that blend good design, strong functionality, and clean code. Currently pursuing BE in Information Technology at SSGMCE Shegaon, I'm exploring the full spectrum of digital fabrication through FabLab modules.</p>
+      <div class="info-boxes">
+        <div class="info-box">
+          <div class="info-key">Name</div>
+          <div class="info-val">Pal Gandhi</div>
+        </div>
+        <div class="info-box">
+          <div class="info-key">Location</div>
+          <div class="info-val">Shegaon</div>
+        </div>
+        <div class="info-box">
+          <div class="info-key">Email</div>
+          <div class="info-val">palgandhi168@gmail.com</div>
+        </div>
+        <div class="info-box">
+          <div class="info-key">Available</div>
+          <div class="info-val" style="color:#4caf50;">Open to Work ✓</div>
+        </div>
+      </div>
+      <div class="skills-list">
+        <div class="skill-row">
+          <i class="fa-solid fa-code skill-icon"></i>
+          <div>
+            <div class="skill-name">Web Development</div>
+            <div class="skill-desc">Responsive websites and web apps using HTML, CSS, JavaScript</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- SKILLS SECTION -->
+<section id="skills" class="section fade-section">
+  <div class="tag-label">What I Know</div>
+  <h2 class="section-heading">Skills &amp; Technologies</h2>
+  <div class="red-line"></div>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-card-icon"><i class="fab fa-html5"></i></div>
+      <div>
+        <div class="skill-card-name">HTML</div>
+        <div class="skill-card-desc">Semantic markup, Flexbox, Grid</div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon"><i class="fab fa-css3-alt"></i></div>
+      <div>
+        <div class="skill-card-name">CSS</div>
+        <div class="skill-card-desc">Basic styling of Web Pages</div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon"><i class="fab fa-js"></i></div>
+      <div>
+        <div class="skill-card-name">JavaScript</div>
+        <div class="skill-card-desc">Basic calculator &amp; interactivity</div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon"><i class="fab fa-github"></i></div>
+      <div>
+        <div class="skill-card-name">Git &amp; GitHub</div>
+        <div class="skill-card-desc">Version control, collaboration</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- RESUME SECTION -->
+<section id="resume" class="section fade-section">
+  <div class="tag-label">My Journey</div>
+  <h2 class="section-heading">Education &amp; Experience</h2>
+  <div class="red-line"></div>
+  <div class="resume-grid">
+    <div>
+      <div class="resume-col-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2025 – Present</div>
+          <div class="timeline-title">Bachelor of Engineering</div>
+          <div class="timeline-place">SSGMCE Shegaon</div>
+          <div class="timeline-desc">Pursuing BE in Information Technology.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023 – 2025</div>
+          <div class="timeline-title">12th Grade · HSC</div>
+          <div class="timeline-place">Mauli College of Science and Arts</div>
+          <div class="timeline-desc">Completed higher secondary with Science stream. Strong foundation in Mathematics and Computer Science.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-title">10th Grade · SSC</div>
+          <div class="timeline-place">SVM</div>
+          <div class="timeline-desc">Completed secondary education with distinction. Early interest in programming and technology.</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="resume-col-title"><i class="fa-solid fa-briefcase"></i> Experience &amp; Projects</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-title">Developer Portfolio</div>
+          <div class="timeline-place">Personal Project</div>
+          <div class="timeline-desc">Designed and developed a Netflix-inspired portfolio using HTML, CSS &amp; JS showcasing all FabLab modules and projects.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-title">FabLab</div>
+          <div class="timeline-place">College Digital FabLab</div>
+          <div class="timeline-desc">Working on 9 modules: Web Dev, UI/UX, AI/ML, 3D Printing, CAD, CAC, IoT, Networking, Java.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-title">Web Technology Project</div>
+          <div class="timeline-place">FabLab – Module 1</div>
+          <div class="timeline-desc">Built a fully responsive web app covering layout, interactivity, and responsive design principles.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FABLAB SECTION -->
+<section id="fablab" class="section fade-section">
+  <div class="tag-label">Digital FabLab</div>
+  <h2 class="section-heading">FabLab Modules</h2>
+  <div class="red-line"></div>
+  <div class="fablab-top-row">
+    <div class="filter-tabs">
+      <button class="filter-btn selected" data-filter="all">All Modules</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="code">Coding</button>
+      <button class="filter-btn" data-filter="tech">Technology</button>
+    </div>
+    <a href="agreement.txt" target="_blank" class="agreement-trigger-btn">
+      <i class="fa-solid fa-file-signature btn-icon"></i>
+      <span>Student Agreement</span>
+      <i class="fa-solid fa-arrow-up-right-from-square btn-arrow"></i>
+    </a>
+  </div>
+  <div class="module-grid">
+    <a href="index1.html" target="_blank" rel="noopener noreferrer" class="module-card" data-cat="code">
+      <div class="module-img-wrap">
+        <img class="module-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=700&q=80" alt="Web Development">
+        <div class="module-img-hover"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>View Module</span></div>
+      </div>
+      <div class="module-info"><span class="module-number">MODULE-1</span><h4 class="module-name">Web Development</h4></div>
+    </a>
+    <a href="index2.html" target="_blank" rel="noopener noreferrer" class="module-card" data-cat="design">
+      <div class="module-img-wrap">
+        <img class="module-img" src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=700&q=75" alt="UI UX Design">
+        <div class="module-img-hover"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>View Module</span></div>
+      </div>
+      <div class="module-info"><span class="module-number">MODULE-2</span><h4 class="module-name">UI / UX Design</h4></div>
+    </a>
+    <a href="index3.html" target="_blank" rel="noopener noreferrer" class="module-card" data-cat="design">
+      <div class="module-img-wrap">
+        <img class="module-img" src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?auto=format&fit=crop&w=700&q=80" alt="CAD">
+        <div class="module-img-hover"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>View Module</span></div>
+      </div>
+      <div class="module-info"><span class="module-number">MODULE-3</span><h4 class="module-name">Computer Aided Design</h4></div>
+    </a>
+     <a href="index4.html" target="_blank" rel="noopener noreferrer" class="module-card" data-cat="design">
+      <div class="module-img-wrap">
+        <img class="module-img" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=75" alt="CAC">
+        <div class="module-img-hover"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>View Module</span></div>
+      </div>
+      <div class="module-info"><span class="module-number">MODULE-4</span><h4 class="module-name">Laser Cutting</h4></div>
+    </a>
+    <a href="index5.html" target="_blank" rel="noopener noreferrer" class="module-card" data-cat="design">
+      <div class="module-img-wrap">
+        <img class="module-img" src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=700&q=75" alt="3D Printing">
+        <div class="module-img-hover"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>View Module</span></div>
+      </div>
+      <div class="module-info"><span class="module-number">MODULE-5</span><h4 class="module-name">3D Printing &amp; Designing</h4></div>
+    </a>
+    
+    <a href="index6.html" target="_blank" rel="noopener noreferrer" class="module-card" data-cat="tech">
+      <div class="module-img-wrap">
+        <img class="module-img" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=700&q=75" alt="AI ML">
+        <div class="module-img-hover"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>View Module</span></div>
+      </div>
+      <div class="module-info"><span class="module-number">MODULE-6</span><h4 class="module-name">Artificial Intelligence &amp; ML</h4></div>
+    </a>
+      <a href="index7.html" target="_blank" rel="noopener noreferrer" class="module-card" data-cat="tech">
+      <div class="module-img-wrap">
+        <img class="module-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=75" alt="IoT">
+        <div class="module-img-hover"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>View Module</span></div>
+      </div>
+      <div class="module-info"><span class="module-number">MODULE-7</span><h4 class="module-name">IoT &amp; Embedded Systems</h4></div>
+    </a>
+    <a href="index8.html" target="_blank" rel="noopener noreferrer" class="module-card" data-cat="tech">
+      <div class="module-img-wrap">
+        <img class="module-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=700&q=75" alt="Networking">
+        <div class="module-img-hover"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>View Module</span></div>
+      </div>
+      <div class="module-info"><span class="module-number">MODULE-8</span><h4 class="module-name">Computer Networking</h4></div>
+    </a>
+    <a href="index9.html" target="_blank" rel="noopener noreferrer" class="module-card module-card-wide" data-cat="code">
+      <div class="module-img-wrap">
+        <img class="module-img" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1400&q=75" alt="Java">
+        <div class="module-img-hover"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>View Module</span></div>
+      </div>
+      <div class="module-info"><span class="module-number">MODULE-9</span><h4 class="module-name">Java Programming</h4></div>
+    </a>
+  </div>
+</section>
+ 
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section fade-section">
+  <div class="tag-label">My Work</div>
+  <h2 class="section-heading">Featured Projects</h2>
+  <div class="red-line"></div>
+  <div class="project-list">
+
+    <div class="project-card">
+      <img class="project-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=70" alt="Portfolio">
+      <div class="project-body">
+        <span class="project-tag">Personal Project · 2026</span>
+        <h3 class="project-title">Developer Portfolio</h3>
+        <p class="project-desc">A Netflix-inspired personal portfolio website to showcase FabLab modules and projects. Features animated hero, typewriter effect, scroll animations, module cards with overlays, and a full contact section.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Pal08" target="_blank" rel="noopener noreferrer" class="project-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://www.figma.com/YOUR_FIGMA_LINK_HERE" target="_blank" rel="noopener noreferrer" class="project-card">
+      <img class="project-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=70" alt="Crown Burger Website">
+      <div class="project-body">
+        <span class="project-tag">UI/UX Design · 2026</span>
+        <h3 class="project-title">Crown Burger Website</h3>
+        <p class="project-desc">A bold and modern restaurant website designed for Crown Burger. Built with a focus on rich visuals, appetizing layouts, and smooth user experience. Designed entirely in Figma with interactive prototypes, custom typography, and a vibrant food-forward color palette.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Figma</span>
+          <span class="tech-tag">UI/UX</span>
+          <span class="tech-tag">Prototyping</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">
+            <i class="fab fa-figma"></i> View on Figma
+          </span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+<!-- CONTACT SECTION -->
+<section id="contact" class="section fade-section">
+  <div class="contact-grid">
+    <div>
+      <div class="tag-label">Get In Touch</div>
+      <h2 class="contact-heading">Let's Build Something<br>Together</h2>
+      <div class="red-line"></div>
+      <p class="contact-desc">Have a project in mind or want to collaborate? Feel free to reach out — I'd love to connect and talk tech!</p>
+      <div class="contact-links-list">
+        <a href="mailto:palgandhi168@gmail.com" class="contact-link-row">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <div class="contact-link-label">Email</div>
+            <div class="contact-link-value">palgandhi168@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/pal-gandhi-3358b83b7" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          <div>
+            <div class="contact-link-label">LinkedIn</div>
+            <div class="contact-link-value">linkedin.com/in/pal-gandhi-3358b83b7</div>
+          </div>
+        </a>
+        <a href="https://github.com/Pal08" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <div class="contact-link-label">GitHub</div>
+            <div class="contact-link-value">github.com/Pal08</div>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/palgandhi_" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+          <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+          <div>
+            <div class="contact-link-label">Instagram</div>
+            <div class="contact-link-value">instagram.com/palgandhi_</div>
+          </div>
+        </a>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/Pal08" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pal-gandhi-3358b83b7" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/palgandhi_" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="form-name" placeholder="Full Name">
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" id="form-phone" placeholder="+91-">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="form-email" placeholder="!!!@example.com">
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" id="form-subject" placeholder="Project collaboration">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea rows="5" id="form-message" placeholder="Tell me about your project!!!"></textarea>
+      </div>
+      <button class="form-submit" type="button" onclick="sendMail()">
+        <i class="fa-solid fa-paper-plane"></i> Send Message
+      </button>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-left">
+    <span class="footer-logo-text">Pal Gandhi</span>
+  </div>
+  <div class="footer-copy">© 2026 Pal Gandhi &nbsp;·&nbsp; Built with HTML, CSS &amp; JS</div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
